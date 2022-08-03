@@ -1,0 +1,96 @@
+*{
+   
+    margin: 0%;
+    padding: 0%;
+
+}
+a{
+    text-decoration: none;
+}
+ section{
+    padding-top:20px;
+    padding-bottom:20px;
+ }
+
+
+ .section-heading {
+    text-align: center;
+    color:  dodgerblue;
+ }
+
+#header{
+    color: white;
+    background-color: dodgerblue;
+    
+}
+#menu{
+    list-style:none;
+    margin: 0;
+    padding: 0%;
+
+}
+
+#menu li {
+    display: inline-block;
+}
+#menu li a {
+    color: #ffff;
+   
+    padding: 15px 10px;
+    display: block;
+
+}
+#menu li a:hover{
+    background-color:skyblue;
+}
+
+
+h1{
+
+    font-size: 2rem;
+}
+#banner{
+    background: url('webdev.jpg') no-repeat 0 0;
+    background-size: cover;
+
+}
+.banner-title h1{
+
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px;
+    margin: 0%;
+    
+
+
+}
+
+
+.banner-title p.lead{
+    color: white;
+    background-color: rgba(0, 255, 255, 0.637);
+    padding: 10px;
+}
+.service-box{
+    text-align: center;
+}
+
+.service-box h3{
+    color: slategray;
+}
+.service-box i.fa{
+    color:  dodgerblue;
+    font-size: 2rem;
+}
+.line{
+    /* background-color:  dodgerblue; */
+    height: 3px;
+    width: 100px;
+    display: block;
+    transform: translate(290%,0%) ;
+    margin:20px;
+}
+#heros{
+background-color: cornflowerblue;
+color: #ffff;
+}

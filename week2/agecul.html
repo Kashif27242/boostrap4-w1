@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age culculator </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-color: #e2e2e2;
+        }
+    </style>
+</head>
+<body> 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+           <div class="card mt-5">
+               <div class="card-body bg-primary text-white">
+                   <h5 class="card-title text-center text-uppercase">age culculator</h5>
+                   <p><small>Enter your Date of Birth here</small></p>
+
+                   <div class="row">
+                       <div class="col-md-4">
+                           <!-- date -->
+                           <div class="form-group">
+                               <input type="text" id="dateb" placeholder="Date" class="form-control">
+                           </div>
+
+
+                       </div>
+                       <div class="col-md-4">
+
+                        <!-- month -->
+                        <div class="form-group">
+                            <select name="" id="monthb"   class="form-control">
+                                <option value="January">Jan</option>
+                                <option value="February">Feb</option>
+                                <option value="March">March</option>
+                                <option value="Aprail">Aprail</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">Sept</option>
+                                <option value="October">Oct</option>
+                                <option value="November">Nov</option>
+                                <option value="December">Dec</option>
+                            </select>
+                        </div>
+
+                       </div>
+                       <div class="col-md-4">
+
+                        <!-- year -->
+                        <div class="form-group">
+                            <input type="text" id="yearb" class="form-control" placeholder="Year">
+                        </div>
+                       </div>
+                   </div>
+                   <div class="container text-center mt-3">
+                       <button  onclick="agecul()" class="btn btn-outline-warning btn-sm  text-uppercase">culculate</button>
+                   </div>
+               </div>
+           </div>
+
+        </div>
+    </div>
+</div>     
+
+<script>
+
+
+    const  agecul = () =>{
+        let date = document.getElementById("dateb").value;
+        let month = document.getElementById("monthb").value;
+        let year = document.getElementById("yearb").value;
+        if(date>31){
+            alert("invalid date!! Enter a valid date");
+            return; 
+
+        }
+        console.log(date);
+        console.log(month);
+        console.log(year);
+        
+        
+        
+
+        // parse
+
+        let dob = new Date('${date} ${month} ${year}');
+        console.log(dob);
+        
+        
+        }
+</script>
+<!-- javascript -->
+<script src="js/jquery-3.6.0.min.js" ></script>
+<script src="js/bootstrap.min.js" ></script>
+<script src="js/script.js"></script>
+</body>
+</html>
